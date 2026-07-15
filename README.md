@@ -50,7 +50,7 @@ hellanodikai/
 ├── notebooks/
 │   └── kaggle_finetune.ipynb   # Notebook fine-tuning Kaggle
 ├── NOTICE                      # Llama Community License notice
-└── LICENSE                     # Apache-2.0
+└── LICENSE                     # Responsible AI Licenses (RAIL)
 ```
 
 ---
@@ -126,7 +126,7 @@ Stack: **Unsloth + QLoRA (4-bit) + TRL SFTTrainer**
 
 | Komponen | Lisensi |
 |----------|---------|
-| Kode sumber | [Apache-2.0](LICENSE) |
+| Kode sumber | [Responsible AI Licenses (RAIL)](LICENSE) |
 | Dataset kurasi | CC-BY-4.0 |
 | Model weights (Llama-HellanodikAI-8B) | [Llama Community License](https://llama.meta.com/llama-downloads) |
 
