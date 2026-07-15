@@ -1,0 +1,28 @@
+# HellanodikAI — Kaggle Fine-tuning Requirements
+# Environment: Kaggle Notebook, NVIDIA T4 x2
+# Install: pip install -r requirements/kaggle.txt
+#
+# CATATAN: Unsloth harus diinstall dari source di Kaggle,
+# ikuti petunjuk di notebooks/kaggle_finetune.ipynb
+
+# Unsloth (fast QLoRA fine-tuning)
+# Di Kaggle: pip install "unsloth[kaggle-new] @ git+https://github.com/unslothai/unsloth.git"
+unsloth>=2024.11.0
+
+# TRL — SFTTrainer
+trl>=0.11.0
+
+# HuggingFace stack
+transformers>=4.44.0
+datasets>=3.0.0
+accelerate>=0.34.0
+peft>=0.12.0
+
+# Quantization (4-bit QLoRA)
+bitsandbytes>=0.43.0
+
+# Evaluation
+evaluate>=0.4.3
+
+# Data pipeline (untuk generate SFT dataset di Kaggle)
+-r base.txt

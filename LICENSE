@@ -1,0 +1,69 @@
+HELLANODIKAI RESPONSIBLE AI LICENSE (RAIL)
+Version 1.0, July 2026
+
+Copyright (c) 2026 Teuku Vaickal Rizki irdian. All rights reserved.
+
+--------------------------------------------------------------------------------
+TERMS AND CONDITIONS FOR USE, REPRODUCTION, AND DISTRIBUTION
+--------------------------------------------------------------------------------
+
+1. DEFINITIONS
+
+"License" shall mean the terms and conditions for use, reproduction, modification, and distribution as defined by this document.
+
+"Licensor" shall mean the copyright owner, Teuku Vaickal Rizki irdian, who is granting this License.
+
+"You" (or "Your") shall mean an individual or Legal Entity exercising permissions granted by this License.
+
+"Academic Use" shall mean any use of the Work for educational, research, classroom, or college projects (proyek kuliah/akademik) without any commercial or profit-making purpose.
+
+"Community Use" shall mean any use of the Work by non-profit organizations, community groups, or individuals for public benefit, educational outreach, or hobbyist projects, provided there is no commercial exploitation or direct/indirect profit generation.
+
+"Commercial Use" shall mean any use, reproduction, modification, or distribution of the Work (including software, datasets, models, weights, or derivative works) for commercial advantage, financial gain, or private monetary compensation. This includes, but is not limited to, software-as-a-service (SaaS) deployments, commercial APIs, paid consulting services, paid applications, or integration into proprietary systems.
+
+"Work" shall mean the software, datasets, model weights, configuration, and documentation made available under this License.
+
+--------------------------------------------------------------------------------
+
+2. GRANT OF RIGHTS
+
+Subject to the terms and conditions of this License, the Licensor hereby grants to You a worldwide, royalty-free, non-exclusive, non-transferable license to use, reproduce, modify, and distribute the Work solely for:
+  a. Academic Use (proyek kuliah/akademik); and
+  b. Community Use (proyek non-komersial).
+
+--------------------------------------------------------------------------------
+
+3. COMMERCIAL RESTRICTIONS
+
+Any Commercial Use of the Work, in whole or in part, is strictly prohibited under this License. 
+
+If You wish to use the Work for Commercial Use, You MUST obtain prior written permission and a commercial license from the Licensor. 
+
+To request commercial licensing, contact:
+  Teuku Vaickal Rizki Irdian
+  (Licensor & Copyright Holder)
+
+--------------------------------------------------------------------------------
+
+4. RESPONSIBLE USE GUIDELINES
+
+You agree NOT to use the Work:
+  a. To generate or disseminate legally binding legal advice, judgments, or decisions (HellanodikAI is strictly for educational and informational purposes only).
+  b. In any manner that violates applicable laws and regulations of the Republic of Indonesia.
+  c. To generate hate speech, harassment, defamation, or misleading legal information.
+
+--------------------------------------------------------------------------------
+
+5. REDISTRIBUTION AND ATTRIBUTION
+
+You may redistribute copies of the Work or derivative works thereof, provided that:
+  a. You include a copy of this License with every copy of the Work.
+  b. You retain all copyright, patent, trademark, and attribution notices from the Work.
+  c. Any derivative work must carry prominent notices stating that You changed the files.
+  d. You add the attribution phrase "Built with Llama" on any user interfaces if using weights derived from Llama models, as required by the Llama Community License.
+
+--------------------------------------------------------------------------------
+
+6. DISCLAIMER OF WARRANTY
+
+THE WORK IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE WORK OR THE USE OR OTHER DEALINGS IN THE WORK.

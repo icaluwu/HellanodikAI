@@ -1,0 +1,19 @@
+# HellanodikAI — Gradio App Requirements
+# Untuk deployment (HF Spaces atau server)
+# Install: pip install -r requirements/gradio.txt
+
+-r base.txt
+
+# Gradio
+gradio>=4.44.0
+
+# Inference (HF Transformers — fallback, lebih lambat dari GGUF tapi lebih portable)
+transformers>=4.44.0
+accelerate>=0.34.0
+torch>=2.3.0; extra == "gpu"   # hanya jika server punya GPU
+
+# GGUF inference (jika server CPU-only)
+llama-cpp-python>=0.2.90
+
+# HuggingFace Hub (download model weights)
+huggingface-hub>=0.24.0

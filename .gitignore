@@ -1,0 +1,29 @@
+# Python cache
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Environments
+.env
+.venv
+venv/
+ENV/
+
+# Jupyter Notebook checkpoints
+.ipynb_checkpoints/
+
+# Project Data (exclude raw logs, indexes, and model weights to keep git repo light)
+data/raw/
+data/index/
+data/processed/sft_dataset.jsonl
+outputs/
+models/
+hellanodikai_lora_model/
+
+# HuggingFace Cache (jika terbuat di lokal)
+.cache/
+hf_cache/
+
+# OS specific
+.DS_Store
+Thumbs.db

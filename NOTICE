@@ -1,0 +1,69 @@
+NOTICE
+
+HellanodikAI
+Copyright 2026 HellanodikAI Contributors
+
+This product is licensed under the Apache License, Version 2.0.
+See the LICENSE file for the full license text.
+
+================================================================================
+LLAMA COMMUNITY LICENSE NOTICE
+================================================================================
+
+This product ("HellanodikAI") includes or was built upon the following
+Meta Llama model(s):
+
+  - Llama 3 (8B) — Meta Platforms, Inc.
+    Base model fine-tuned by GoToCompany as:
+    GoToCompany/llama3-8b-cpt-sahabatai-v1-instruct ("Sahabat-AI")
+
+The fine-tuned model weights produced by this project are distributed under
+the Llama Community License and must comply with the following requirements:
+
+  1. Any model derived from or built upon Meta Llama model weights must include
+     "Llama" in its name. The fine-tuned model produced by this project is
+     named "Llama-HellanodikAI-8B" in accordance with this requirement.
+
+  2. The application ("HellanodikAI") is built with Llama.
+     **Built with Llama.**
+
+  3. Use of Llama model weights is subject to the Meta Llama Community License
+     Agreement, available at:
+     https://llama.meta.com/llama-downloads
+
+  4. If you use the fine-tuned model weights (Llama-HellanodikAI-8B) or
+     create derivatives thereof, you must:
+       a. Include this NOTICE file.
+       b. Retain the "Llama-" prefix in the model name.
+       c. Comply with all terms of the Meta Llama Community License.
+
+================================================================================
+THIRD-PARTY COMPONENTS
+================================================================================
+
+This project uses the following open-source libraries:
+
+  - Unsloth (Apache-2.0) — https://github.com/unslothai/unsloth
+  - TRL / SFTTrainer (Apache-2.0) — https://github.com/huggingface/trl
+  - Transformers (Apache-2.0) — https://github.com/huggingface/transformers
+  - PEFT (Apache-2.0) — https://github.com/huggingface/peft
+  - sentence-transformers (Apache-2.0) — https://github.com/UKPLab/sentence-transformers
+  - FAISS (MIT) — https://github.com/facebookresearch/faiss
+  - rank-bm25 (Apache-2.0) — https://github.com/dorianbrown/rank_bm25
+  - pdfplumber (MIT) — https://github.com/jsvine/pdfplumber
+  - PyMuPDF (AGPL-3.0) — https://github.com/pymupdf/PyMuPDF
+  - Gradio (Apache-2.0) — https://github.com/gradio-app/gradio
+  - llama-cpp-python (MIT) — https://github.com/abetlen/llama-cpp-python
+
+================================================================================
+LEGAL DISCLAIMER
+================================================================================
+
+HellanodikAI is provided for EDUCATIONAL AND INFORMATIONAL purposes only.
+It does not constitute legal advice and is not a substitute for consultation
+with a qualified legal professional. The information provided by HellanodikAI
+reflects publicly available statutory text and should not be relied upon as
+authoritative legal guidance in any specific case.
+
+Users with legal issues should consult a licensed attorney (advokat) or
+contact a legal aid organization (Lembaga Bantuan Hukum / LBH).

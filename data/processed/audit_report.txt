@@ -1,0 +1,39 @@
+================================================================================
+               LAPORAN AUDIT CORPUS PASAL HELLANODIKAI
+================================================================================
+Total Entri di Seluruh Corpus: 1050
+
+
+--------------------------------------------------------------------------------
+Dokumen: UU No. 1 Tahun 2023
+--------------------------------------------------------------------------------
+  Pool: Pasal Arab Standar
+  Jumlah entri total: 624
+  Range pasal terdeteksi: 1 s.d. 624
+  Jumlah nomor pasal terduplikasi: 0
+  Jumlah pasal anomali (> 624): 0
+
+
+--------------------------------------------------------------------------------
+Dokumen: UU No. 1 Tahun 2026
+--------------------------------------------------------------------------------
+  Pool: Struktur Utama UU (Pasal Romawi I-IX)
+  Jumlah entri total: 8
+  Range pasal terdeteksi: I s.d. IX
+  Jumlah nomor pasal terduplikasi: 0
+
+
+  Pool: Amandemen KUHP (Sub-pasal Arab)
+  Jumlah entri total: 49
+  Range pasal terdeteksi: 3 s.d. 622
+  Jumlah nomor pasal terduplikasi: 0
+
+
+--------------------------------------------------------------------------------
+Dokumen: UU No. 20 Tahun 2025
+--------------------------------------------------------------------------------
+  Pool: Pasal Arab Standar
+  Jumlah entri total: 369
+  Range pasal terdeteksi: 1 s.d. 369
+  Jumlah nomor pasal terduplikasi: 0
+

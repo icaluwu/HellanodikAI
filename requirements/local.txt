@@ -1,0 +1,22 @@
+# HellanodikAI — Local Inference Requirements
+# CPU-only environment: Ryzen 3 3200G, 16GB RAM, NO dedicated GPU
+# Install: pip install -r requirements/base.txt -r requirements/local.txt
+
+-r base.txt
+
+# CPU-only LLM inference via GGUF quantized model
+# Pastikan install tanpa CUDA: CMAKE_ARGS="-DLLAMA_CUBLAS=off" pip install llama-cpp-python
+llama-cpp-python>=0.2.90
+
+# Gradio UI
+gradio>=4.44.0
+
+# Tokenizer (untuk hitung token, tidak perlu GPU)
+transformers>=4.44.0
+tokenizers>=0.19.0
+
+# Serialization
+pickle5>=0.0.12; python_version < "3.8"
+
+# Optional: progress & debug
+rich>=13.7.0
