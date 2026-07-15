@@ -1,7 +1,7 @@
 # HellanodikAI
 
 **Asisten Literasi Hukum Pidana Indonesia**  
-*Built with Llama · Apache-2.0 (kode) · CC-BY-4.0 (dataset) · Llama Community License (model weights)*
+*Built with Llama · Responsible AI Licenses (RAIL) · CC-BY-4.0 (dataset) · Llama Community License (model weights)*
 
 > HellanodikAI membantu masyarakat awam memahami **KUHP baru (UU No. 1 Tahun 2023, berlaku 2 Januari 2026)** dan perubahannya dalam bahasa yang sederhana, dilengkapi rujukan pasal yang akurat.
 >
