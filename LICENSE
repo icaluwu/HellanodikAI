@@ -1,69 +1,83 @@
-HELLANODIKAI RESPONSIBLE AI LICENSE (RAIL)
-Version 1.0, July 2026
+HELLANODIKAI LICENSE
+Based on Creative Commons Attribution-NonCommercial 4.0 International (CC BY-NC 4.0)
 
-Copyright (c) 2026 Teuku Vaickal Rizki irdian. All rights reserved.
+Copyright (c) 2026 Teuku Vaickal Rizki Irdian. All rights reserved.
 
 --------------------------------------------------------------------------------
-TERMS AND CONDITIONS FOR USE, REPRODUCTION, AND DISTRIBUTION
+
+This Work (including software, datasets, model weights, configuration, and
+documentation) is licensed under the Creative Commons Attribution-NonCommercial
+4.0 International License (CC BY-NC 4.0).
+
+Full legal text of CC BY-NC 4.0:
+https://creativecommons.org/licenses/by-nc/4.0/legalcode
+
+Human-readable summary (not a substitute for the license):
+https://creativecommons.org/licenses/by-nc/4.0/
+
+Under CC BY-NC 4.0, you are free to:
+  - Share — copy and redistribute the Work in any medium or format
+  - Adapt — remix, transform, and build upon the Work
+
+for Academic Use and Community Use (educational, research, classroom, hobbyist,
+and non-profit purposes), under the following terms:
+  - Attribution — You must give appropriate credit to Teuku Vaickal Rizki Irdian,
+    provide a link to this license, and indicate if changes were made.
+  - NonCommercial — You may not use the Work for commercial purposes without
+    separate written permission from the Licensor (see Section 2 below).
+  - No additional restrictions — You may not apply legal terms or technological
+    measures that legally restrict others from doing anything the license permits.
+
 --------------------------------------------------------------------------------
 
 1. DEFINITIONS
 
-"License" shall mean the terms and conditions for use, reproduction, modification, and distribution as defined by this document.
-
-"Licensor" shall mean the copyright owner, Teuku Vaickal Rizki irdian, who is granting this License.
-
-"You" (or "Your") shall mean an individual or Legal Entity exercising permissions granted by this License.
-
-"Academic Use" shall mean any use of the Work for educational, research, classroom, or college projects (proyek kuliah/akademik) without any commercial or profit-making purpose.
-
-"Community Use" shall mean any use of the Work by non-profit organizations, community groups, or individuals for public benefit, educational outreach, or hobbyist projects, provided there is no commercial exploitation or direct/indirect profit generation.
-
-"Commercial Use" shall mean any use, reproduction, modification, or distribution of the Work (including software, datasets, models, weights, or derivative works) for commercial advantage, financial gain, or private monetary compensation. This includes, but is not limited to, software-as-a-service (SaaS) deployments, commercial APIs, paid consulting services, paid applications, or integration into proprietary systems.
-
-"Work" shall mean the software, datasets, model weights, configuration, and documentation made available under this License.
+"Commercial Use" means any use, reproduction, modification, or distribution of
+the Work for commercial advantage, financial gain, or private monetary
+compensation. This includes, but is not limited to, SaaS deployments,
+commercial APIs, paid consulting services, paid applications, or integration
+into proprietary systems.
 
 --------------------------------------------------------------------------------
 
-2. GRANT OF RIGHTS
+2. COMMERCIAL LICENSING
 
-Subject to the terms and conditions of this License, the Licensor hereby grants to You a worldwide, royalty-free, non-exclusive, non-transferable license to use, reproduce, modify, and distribute the Work solely for:
-  a. Academic Use (proyek kuliah/akademik); and
-  b. Community Use (proyek non-komersial).
-
---------------------------------------------------------------------------------
-
-3. COMMERCIAL RESTRICTIONS
-
-Any Commercial Use of the Work, in whole or in part, is strictly prohibited under this License. 
-
-If You wish to use the Work for Commercial Use, You MUST obtain prior written permission and a commercial license from the Licensor. 
+Any Commercial Use of the Work, in whole or in part, requires a separate
+commercial license and prior written permission from the Licensor.
 
 To request commercial licensing, contact:
-  Teuku Vaickal Rizki Irdian
-  (Licensor & Copyright Holder)
+  Teuku Vaickal Rizki Irdian (Licensor & Copyright Holder)
+  LinkedIn: https://linkedin.com/in/icaluwu
+  Portfolio: https://icaluwu.site
 
 --------------------------------------------------------------------------------
 
-4. RESPONSIBLE USE GUIDELINES
+3. RESPONSIBLE USE GUIDELINES
 
-You agree NOT to use the Work:
-  a. To generate or disseminate legally binding legal advice, judgments, or decisions (HellanodikAI is strictly for educational and informational purposes only).
-  b. In any manner that violates applicable laws and regulations of the Republic of Indonesia.
-  c. To generate hate speech, harassment, defamation, or misleading legal information.
-
---------------------------------------------------------------------------------
-
-5. REDISTRIBUTION AND ATTRIBUTION
-
-You may redistribute copies of the Work or derivative works thereof, provided that:
-  a. You include a copy of this License with every copy of the Work.
-  b. You retain all copyright, patent, trademark, and attribution notices from the Work.
-  c. Any derivative work must carry prominent notices stating that You changed the files.
-  d. You add the attribution phrase "Built with Llama" on any user interfaces if using weights derived from Llama models, as required by the Llama Community License.
+In addition to the terms of CC BY-NC 4.0, You agree NOT to use the Work:
+  a. To generate or disseminate legally binding legal advice, judgments, or
+     decisions (this model is strictly for educational and informational
+     purposes only).
+  b. In any manner that violates applicable laws and regulations of the
+     Republic of Indonesia.
+  c. To generate hate speech, harassment, defamation, or misleading legal
+     information.
 
 --------------------------------------------------------------------------------
 
-6. DISCLAIMER OF WARRANTY
+4. THIRD-PARTY ATTRIBUTION
 
-THE WORK IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE WORK OR THE USE OR OTHER DEALINGS IN THE WORK.
+This Work is a derivative of Llama-based models. If You use weights derived
+from Llama models, You must add the attribution phrase "Built with Llama" on
+any user interfaces, as required by the Llama Community License.
+
+--------------------------------------------------------------------------------
+
+5. DISCLAIMER OF WARRANTY
+
+THE WORK IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED,
+INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A
+PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHOR OR
+COPYRIGHT HOLDER BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER
+IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN
+CONNECTION WITH THE WORK OR THE USE OR OTHER DEALINGS IN THE WORK.

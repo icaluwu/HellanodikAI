@@ -5,6 +5,11 @@ test_retrieval.py — Script untuk menguji Hybrid Retrieval HellanodikAI secara 
 import sys
 from pathlib import Path
 
+# Konfigurasi encoding stdout ke UTF-8 untuk mendukung karakter emoji di terminal Windows
+if sys.platform.startswith("win"):
+    import io
+    sys.stdout = io.TextIOWrapper(sys.stdout.buffer, encoding="utf-8")
+
 # Hubungkan path ke parent dir agar bisa import src
 sys.path.append(str(Path(__file__).resolve().parent.parent))
 

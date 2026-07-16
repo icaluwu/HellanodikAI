@@ -42,26 +42,35 @@ class HybridRetriever:
             self.bm25 = pickle.load(f)
         logger.info("Indeks BM25 berhasil dimuat.")
         
-        # 3. Load FAISS Index & Metadata
-        import faiss
-        if not cfg.FAISS_INDEX_PATH.exists():
-            raise FileNotFoundError(f"Indeks FAISS tidak ditemukan di {cfg.FAISS_INDEX_PATH}. Jalankan indexer.py terlebih dahulu.")
-        self.faiss_index = faiss.read_index(str(cfg.FAISS_INDEX_PATH))
-        
-        if not cfg.FAISS_META_PATH.exists():
-            raise FileNotFoundError(f"Metadata FAISS tidak ditemukan di {cfg.FAISS_META_PATH}.")
-        with open(cfg.FAISS_META_PATH, "r", encoding="utf-8") as f:
-            self.faiss_metadata = json.load(f)
-        logger.info("Indeks FAISS dan metadata berhasil dimuat.")
-        
-        # 4. Load Models (SentenceTransformer & CrossEncoder)
-        from sentence_transformers import SentenceTransformer, CrossEncoder
-        logger.info(f"Loading embedding model: {cfg.EMBEDDING_MODEL} ...")
-        self.embed_model = SentenceTransformer(cfg.EMBEDDING_MODEL, device="cpu")
-        
-        logger.info(f"Loading reranker model: {cfg.RERANKER_MODEL} ...")
-        self.rerank_model = CrossEncoder(cfg.RERANKER_MODEL, device="cpu")
-        
+        # 3. Load FAISS Index & Metadata (with fallback)
+        self.use_dense = True
+        try:
+            import faiss
+            if not cfg.FAISS_INDEX_PATH.exists():
+                raise FileNotFoundError(f"Indeks FAISS tidak ditemukan di {cfg.FAISS_INDEX_PATH}. Jalankan indexer.py terlebih dahulu.")
+            self.faiss_index = faiss.read_index(str(cfg.FAISS_INDEX_PATH))
+            
+            if not cfg.FAISS_META_PATH.exists():
+                raise FileNotFoundError(f"Metadata FAISS tidak ditemukan di {cfg.FAISS_META_PATH}.")
+            with open(cfg.FAISS_META_PATH, "r", encoding="utf-8") as f:
+                self.faiss_metadata = json.load(f)
+            logger.info("Indeks FAISS dan metadata berhasil dimuat.")
+            
+            # 4. Load Models (SentenceTransformer & CrossEncoder)
+            from sentence_transformers import SentenceTransformer, CrossEncoder
+            logger.info(f"Loading embedding model: {cfg.EMBEDDING_MODEL} ...")
+            self.embed_model = SentenceTransformer(cfg.EMBEDDING_MODEL, device="cpu")
+            
+            logger.info(f"Loading reranker model: {cfg.RERANKER_MODEL} ...")
+            self.rerank_model = CrossEncoder(cfg.RERANKER_MODEL, device="cpu")
+        except Exception as e:
+            logger.warning(f"Gagal memuat sistem dense FAISS/Transformers (error: {e}). Beralih ke mode pencarian BM25 saja secara penuh.")
+            self.use_dense = False
+            self.faiss_index = None
+            self.faiss_metadata = None
+            self.embed_model = None
+            self.rerank_model = None
+            
         logger.info("HybridRetriever siap digunakan.")
 
     def retrieve(self, query: str, top_k_bm25: int = None, top_k_faiss: int = None, rerank_k: int = None) -> list[dict]:
@@ -76,6 +85,23 @@ class HybridRetriever:
         
         logger.info(f"Retrieving for query: '{query}' (BM25={k_bm25}, FAISS={k_faiss}, Rerank={k_rerank})")
         
+        # Fallback jika model dense / PyTorch tidak dapat dimuat
+        if not self.use_dense:
+            tokenized_query = clean_and_tokenize(query)
+            bm25_scores = self.bm25.get_scores(tokenized_query)
+            top_bm25_indices = np.argsort(bm25_scores)[::-1][:k_rerank]
+            
+            results = []
+            for idx in top_bm25_indices:
+                score = bm25_scores[idx]
+                if score > 0.0:
+                    entry_copy = self.corpus[idx].copy()
+                    entry_copy["retrieval_score"] = float(score)
+                    entry_copy["retrieval_source"] = "BM25"
+                    results.append(entry_copy)
+            logger.info(f"Berhasil mengambil top {len(results)} pasal via BM25 (Dense disabled).")
+            return results
+
         # -------------------------------------------------------------------
         # 1. Sparse Search (BM25)
         # -------------------------------------------------------------------
